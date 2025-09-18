@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prediction result</title>
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+ <div class="container">
+     <h2>predicted heart disease</h2>
+    <h1>Prediction: {{ result }}</h1>
+
+     <br>
+     <a href="/input"><button>predict again</button></a>
+ </div>
+
+</body>
+</html>

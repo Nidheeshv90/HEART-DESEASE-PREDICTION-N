@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Heart Disease Prediction</h1>
+        <form action="/predict" method="POST">
+            <label>HighBP:</label>
+            <input type="radio" name="HighBP" value="1" required>Yes
+            <input type="radio" name="HighBP" value="0" required>No
+
+            <label>HighChol:</label>
+            <input type="radio" name="HighChol" value="1" required>Yes
+            <input type="radio" name="HighChol" value="0" required>No
+
+            <label>CholCheck:</label>
+            <input type="radio" name="CholCheck" value="1" required>Yes
+            <input type="radio" name="CholCheck" value="0" required>No
+
+            <label for="BMI">BMI:</label>
+            <input type="number" id="BMI" step="any" name="BMI" required>
+
+            <label>Smoker:</label>
+            <input type="radio" name="Smoker" value="1" required>Yes
+            <input type="radio" name="Smoker" value="0" required>No
+
+            <label>Stroke:</label>
+            <input type="radio" name="Stroke" value="1" required>Yes
+            <input type="radio" name="Stroke" value="0" required>No
+
+            <label for="Diabetes">Diabetes:</label>
+            <select name="Diabetes" id="Diabetes" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+                <option value="2">Borderline</option>
+            </select>
+
+            <label>PhysActivity:</label>
+            <input type="radio" name="PhysActivity" value="1" required>Yes
+            <input type="radio" name="PhysActivity" value="0" required>No
+
+            <label>Fruits:</label>
+            <input type="radio" name="Fruits" value="1" required>Yes
+            <input type="radio" name="Fruits" value="0" required>No
+
+            <label>Veggies:</label>
+            <input type="radio" name="Veggies" value="1" required>Yes
+            <input type="radio" name="Veggies" value="0" required>No
+
+            <label for="MentHlth">MentHlth:</label>
+            <input type="number" id="MentHlth" step="any" name="MentHlth" required>
+
+            <label for="PhysHlth">PhysHlth:</label>
+            <input type="number" id="PhysHlth" step="any" name="PhysHlth" required>
+
+            <label>DiffWalk:</label>
+            <input type="radio" name="DiffWalk" value="1" required>Yes
+            <input type="radio" name="DiffWalk" value="0" required>No
+
+             <label>AnyHealthcare:</label>
+            <input type="radio" name="AnyHealthcare" value="1" required>Yes
+            <input type="radio" name="AnyHealthcare" value="0" required>No
+
+            <label>NoDocbcCost:</label>
+            <input type="radio" name="NoDocbcCost" value="1" required>Yes
+            <input type="radio" name="NoDocbcCost" value="0" required>No
+
+
+            <label for="GenHlth">GenHlth:</label>
+            <input type="number" id="GenHlth" step="any" name="GenHlth" required>
+
+             <label>HvyAlcoholConsump:</label>
+            <input type="radio" name="HvyAlcoholConsump" value="1" required>Yes
+            <input type="radio" name="HvyAlcoholConsump" value="0" required>No
+
+
+            <label for="Age">Age:</label>
+            <input type="number" id="Age" name="Age" required>
+
+            <label for="Sex">Sex:</label>
+            <select name="Sex" id="Sex" required>
+                <option value="0">Female</option>
+                <option value="1">Male</option>
+            </select>
+
+
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
