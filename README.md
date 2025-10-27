@@ -13,6 +13,8 @@ A Random Forest Classifier is trained using Scikit-learn to predict whether a pa
 
 Key Steps:
 
+A Flask-based web app serves as the front end, where users can input car details and receive instant  predictions.
+
 Import and explore the dataset using Pandas.
 
 Clean and preprocess data (handle missing values, encode categorical features, normalize data).
@@ -41,4 +43,5 @@ KNeighborsClassifier – ensemble algorithm for classification
 
 Outcome:
 The project successfully builds a predictive system that identifies patients at risk of heart disease based on medical parameters. The model can be integrated into healthcare applications for early detection and preventive diagnosis.
+
 
